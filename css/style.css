@@ -142,4 +142,10 @@ div.gameBlock a:hover{
 		height: 15%;
 		margin-top: 4%;
 	}
+	div#blockGame a{
+		background-position-x: -90px;
+	}
+	div#oneKick a, div#rockingMemory a, div#guessMyNumber a {
+		background-position-x: -45px;
+	}
 }
