@@ -122,3 +122,24 @@ div.gameBlock a:hover{
 		font-size: 1em;
 	}
 }
+
+@media (orientation: portrait) {
+	div.gameBlock{
+		width: 40%;
+		height: 15%;
+		margin: 4%;
+		display: inline-block;
+	}
+	div#blockGame, div#rockingMemory, div#oneKick, div#guessMyNumber, div#ghostHunting{
+		transform: perspective( 300px ) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+	}
+	div#ghostHunting{
+		margin-top: 4%;
+		width: 40%;
+		height: 15%;
+	}
+	div#rockingMemory, div#guessMyNumber, div#oneKick {
+		height: 15%;
+		margin-top: 4%;
+	}
+}
