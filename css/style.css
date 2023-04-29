@@ -148,4 +148,7 @@ div.gameBlock a:hover{
 	div#oneKick a, div#rockingMemory a, div#guessMyNumber a {
 		background-position-x: -45px;
 	}
+	div.gameBlock h1{
+		font-size: 0.9em;
+	}
 }
