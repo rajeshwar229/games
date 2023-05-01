@@ -108,18 +108,22 @@ div.gameBlock a:hover{
 }
 @media (max-width: 1280px) {
 	div.gameBlock h1{
-		font-size: 1.3em;
+		font-size: 1.3rem;
 	}
-
 }
 @media (max-width: 1048px) {
 	div.gameBlock h1{
-		font-size: 1.15em;
+		font-size: 1rem;
 	}
 }
 @media (max-width: 768px) {
 	div.gameBlock h1{
-		font-size: 1em;
+		font-size: 0.9rem;
+	}
+}
+@media (max-width: 640px) {
+	div.gameBlock h1{
+		font-size: 0.8rem;
 	}
 }
 
@@ -144,8 +148,5 @@ div.gameBlock a:hover{
 	}
 	div#blockGame a, div#oneKick a, div#rockingMemory a, div#guessMyNumber a {
 		background-position-x: -30px;
-	}
-	div.gameBlock h1{
-		font-size: 0.9em;
 	}
 }
