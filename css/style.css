@@ -31,7 +31,7 @@ div.gameBlock{
 div.gameBlock h1{
 	margin:0 auto;
 	padding:0;
-	font-size: 1.5em;
+	font-size: 1.5rem;
     text-align: center;
 }
 div.gameBlock a{
@@ -41,27 +41,48 @@ div.gameBlock a{
 	border: 1px solid black;
 	-webkit-filter: blur(1px) brightness(50%) grayscale(100%);	
 }
+div#blockGame, div#rockingMemory, div#guessMyNumber{
+	transform: perspective( 300px ) rotateX(0deg) rotateY(30deg) rotateZ(0deg); 
+
+}
 div#blockGame{
-	width: 15%;
+    height: 45%;
+}
+div#blockGame, div#ttt{
+	width: 13%;
+	margin-top: 12%;
 }
 div#rockingMemory{
-	transform: perspective( 260px ) rotateY(35deg) rotateZ(0deg);
     height: 25%;
 }
-div#whiteBlack{
-	height: 43%;
-    margin-top: 9.5%;
-    width: 15%;
+div#rockingMemory{
+	height: 33%;
+    margin-top: 12.3%;
+    width: 10%;
 }
-div#blockGame, div#rockingMemory{
-  transform: perspective( 180px ) rotateY(26deg)  rotateZ(0deg);
+div#oneKick{
+	margin-top: 15%;
+    height: 25%;
+	width: 8%;
 }
-div#rockingMemory, div#guessMyNumber{
-	height: 25%;
-	margin-top: 10%;
+div#whiteBlack {
+	height: 31%;
+    margin-top: 13.6%;
 	width: 10%;
 }
-div#blockGame:hover, div#guessMyNumber:hover, div#rockingMemory:hover, div#oneKick:hover, div#whiteBlack:hover{
+div#rockingMemory h1, div#whiteBlack  h1{
+	font-size: 1.25rem;
+}
+div#guessMyNumber{
+	height: 25%;
+    margin-top: 13.8%;
+    width: 8%;
+}
+div#guessMyNumber h1, div#oneKick  h1{
+	font-size: 1rem;
+}
+div#blockGame:hover, div#guessMyNumber:hover, div#rockingMemory:hover,
+div#oneKick:hover, div#whiteBlack:hover, div#ttt:hover{
 	transform: perspective( 300px ) rotateY(0deg) rotateZ(0deg) scale(1.1,1);
     transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) transform;
 	z-index: 2;
@@ -80,9 +101,9 @@ div#blockGame a{
 }
 div#ghostHunting{
 	transform: perspective( 300px ) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
-	margin-top: 12%;
-	width: 23%;
-	height: 21%;
+	margin-top: 14.5%;
+    width: 20%;
+    height: 23%;
 }
 div#ghostHunting a {
   box-shadow:0px 10px 10px rgba(0,0,0,0.3);
@@ -91,13 +112,10 @@ div#ghostHunting a {
   -webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255,255,255,0.3) 0%, transparent 40%, transparent 100%);
   
 }
-div#guessMyNumber, div#oneKick, div#whiteBlack  {
+div#oneKick, div#whiteBlack, div#ttt  {
 	transform: perspective( 300px ) rotateX(0deg) rotateY(-20deg) rotateZ(0deg); 
 }
-div#oneKick  {
-	margin-top: 11.2%;
-	height: 33%;
-}
+
 div#rockingMemory  a{
 	box-shadow:10px 10px 10px rgba(0,0,0,0.3);
 	background:url(../images/rockingMemory.png) no-repeat -100px 0;
@@ -106,7 +124,7 @@ div#rockingMemory  a{
 }
 div#oneKick a{
 	box-shadow:10px 10px 10px rgba(0,0,0,0.3);
-	background:url(../images/oneKick.png) no-repeat -185px 0;
+	background:url(../images/oneKick.png) no-repeat -115px 0;
 	background-size:cover;
 	-webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255,255,255,0.3) 20%, transparent 30%) ;
 	
@@ -119,10 +137,16 @@ div#guessMyNumber a{
 }
 div#whiteBlack a{
 	box-shadow:10px 10px 10px rgba(0,0,0,0.3);
-	background:url(../images/whiteBlack.png) no-repeat -180px 0px;
+	background:url(../images/whiteBlack.png) no-repeat -160px 0px;
 	background-size:cover;
 	-webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255,255,255,0.3) 20%, transparent 30%);
   }
+div#ttt a{
+box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+background:url(../images/ttt.png) no-repeat -180px 0px;
+background-size:cover;
+-webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255,255,255,0.3) 20%, transparent 30%);
+}
 div.gameBlock a:hover{
 	-webkit-filter: blur(0px) brightness(100%) grayscale(10%);
 	box-shadow:0px 20px 100px 20px #fff !important;
@@ -134,24 +158,24 @@ div.gameBlock a:hover{
 }
 @media (max-width: 1048px) {
 	div.gameBlock h1{
-		font-size: 1rem;
+		font-size: 1rem !important;
 	}
 }
 @media (max-width: 768px) {
 	div.gameBlock h1{
-		font-size: 0.9rem;
+		font-size: 0.9rem !important;
 	}
-	div#blockGame a, div#whiteBlack a{
-		background-position: -50px 0;
+	div#blockGame a, div#whiteBlack a, div#ttt a{
+		background-position: -50px 0 !important;
 	}
 	div#rockingMemory a, div#guessMyNumber a, div#oneKick a{
-		background-position: -25px 0;
+		background-position: -25px 0 !important;
 
 	}
 }
 @media (max-width: 640px) {
 	div.gameBlock h1{
-		font-size: 0.8rem;
+		font-size: 0.8rem !important;
 	}
 }
 
@@ -162,7 +186,7 @@ div.gameBlock a:hover{
 		margin: 4%  !important;
 		display: inline-block  !important;
 	}
-	div#blockGame, div#rockingMemory, div#oneKick, div#guessMyNumber, div#whiteBlack{
+	div#blockGame, div#rockingMemory, div#oneKick, div#guessMyNumber, div#whiteBlack, div#ttt{
 		transform: perspective( 300px ) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
 	}
 	div#ghostHunting{
@@ -174,7 +198,7 @@ div.gameBlock a:hover{
 		height: 15%;
 		margin-top: 4%;
 	}
-	div#blockGame a, div#oneKick a, div#rockingMemory a, div#guessMyNumber a, div#whiteBlack a {
+	div#blockGame a, div#oneKick a, div#rockingMemory a, div#guessMyNumber a, div#whiteBlack a, div#ttt a {
 		background-position-x: -30px;
 	}
 }
