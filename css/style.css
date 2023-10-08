@@ -180,6 +180,10 @@ div.gameBlock a:hover{
 }
 
 @media (orientation: portrait) {
+	
+	div.gameBlock a{
+		-webkit-filter: blur(0px) brightness(100%) grayscale(10%);
+	}
 	div.gameBlock{
 		width: 40% !important;
 		height: 15%  !important;
