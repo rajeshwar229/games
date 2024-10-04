@@ -1,2 +1,2 @@
-# games
-All My Games #https://rajeshwar229.github.io/games/
+https://rajeshwar229.github.io/games/
+All My Games
