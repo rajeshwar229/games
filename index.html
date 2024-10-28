@@ -47,8 +47,7 @@
 			e.addEventListener('mouseenter click touch',() {
 				hoverSound.currentTime = 0;
 		                hoverSound.play();
-			}, () => {
-				hoverSound.pause();
+				setTimeOut(()=>{hoverSound.pause();},200);
 			});
 		});
 	</script>
