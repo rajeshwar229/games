@@ -179,6 +179,12 @@ div.gameBlock a:hover{
 	}
 }
 
+@media screen and (max-width: 1494px){
+	div#rockingMemory{
+		height: 33%;
+		margin-top: 12.3%;
+	}
+}
 @media (orientation: portrait) {
 	
 	div.gameBlock a{
