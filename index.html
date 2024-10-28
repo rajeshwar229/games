@@ -44,7 +44,7 @@
 	<script>
 		const hoverSound = document.getElementById("hover-sound");
 		document.querySelectorAll(".gameBlock").forEach(e => {
-			e.addEventListener('mouseenter click touch',() {
+			e.addEventListener('mouseenter click touch',() => {
 				hoverSound.currentTime = 0;
 		                hoverSound.play();
 				setTimeOut(()=>{hoverSound.pause();},200);
